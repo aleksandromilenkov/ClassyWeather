@@ -90,3 +90,27 @@ input:focus {
   font-size: 2.4rem;
   font-weight: 700;
 }
+
+@media only screen and (width <= 600px) {
+  .app {
+    padding: 1rem 0;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  html {
+    font-size: 50%;
+  }
+  .weather {
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .weatherList {
+    width: 90%;
+  }
+}

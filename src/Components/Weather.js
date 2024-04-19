@@ -11,7 +11,7 @@ class Weather extends React.Component {
       location,
     } = this.props.weatherData;
     return (
-      <div>
+      <div className="weatherList">
         <h2>Weather {location}</h2>
         <ul className="weather">
           {dates.map((date, idx) => (
