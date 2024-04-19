@@ -1,4 +1,4 @@
-function getWeatherIcon(wmoCode) {
+export function getWeatherIcon(wmoCode) {
   const icons = new Map([
     [[0], "☀️"],
     [[1], "🌤"],
@@ -16,7 +16,7 @@ function getWeatherIcon(wmoCode) {
   return icons.get(arr);
 }
 
-function convertToFlag(countryCode) {
+export function convertToFlag(countryCode) {
   const codePoints = countryCode
     .toUpperCase()
     .split("")
@@ -24,7 +24,7 @@ function convertToFlag(countryCode) {
   return String.fromCodePoint(...codePoints);
 }
 
-function formatDay(dateStr) {
+export function formatDay(dateStr) {
   return new Intl.DateTimeFormat("en", {
     weekday: "short",
   }).format(new Date(dateStr));
