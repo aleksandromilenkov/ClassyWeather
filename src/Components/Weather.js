@@ -8,10 +8,11 @@ class Weather extends React.Component {
       temperature_2m_min: minTemps,
       time: dates,
       weathercode: codes,
+      location,
     } = this.props.weatherData;
     return (
       <div>
-        <h2>Weather {this.props.location}</h2>
+        <h2>Weather {location}</h2>
         <ul className="weather">
           {dates.map((date, idx) => (
             <Day
